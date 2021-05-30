@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future Rentals</title>
+
+<script type="text/javascript">
+        window.onload = function() 
+		{document.getElementById('contact-form').addEventListener('submit', function(event) 
+			{event.preventDefault(); // generate a five digit number for the contact_number variable 
+			this.contact_number.value = Math.random() * 100000 | 0; // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {console.log('SUCCESS!');}, function(error) {console.log('FAILED...', error);});
+            });
+        }
+    </script>
+<style>
+	header {z-index: 10;}
+	div.s1 {position: absolute; top: 0px; background-color:white; Margin-top:0%; Width:100%;}
+	body {background-color: rgba(0, 178, 255, 1);}
+	.walk {margin-top:11%; margin-left:auto; Margin-right:Auto; text-align:center; width:50%;
+		 background-color: white; color: rgba(0, 178, 255, 1); padding-top:1px; padding-botto:50px;}
+			
+	.clearfix ::after {content:""; display:table; clear:both;}
+	
+	nav li {display:inline-block; margin-left:30px; margin-right:85px; padding-top:25px;
+			position:relative;}
+	nav a::before {content:""; display:block; height:5px; width:100%; background-color: rgba(0, 178, 255, 1); position:absolute; top: 0;}
+	</style>
+</head>
+<body>
+	<header class="clearfix">
+		<div class="s1" style="width:100%; font-size-adjust:100%;">
+			<img style="float: left;" src="logo.png" alt="Capstone LOGO" width="10%" height="5%" a href="index.html">
+				<h3 style="float:left; padding:0%; position: center-align;">CAPSTONE <br> <i style="color: rgba(0, 178, 255, 1);">Top of the Line</i></h3>
+			<nav>
+				<ul style="margin:0; padding:0; list-style:none; float:right; color: rgba(0, 178, 255, 1);">
+					<li><a href="index.html">Home</a></li>	
+					<li><a href="4doorcars.html">Vehicles (4-doors)</a></li>					
+					<li><a href="coupes.html">Coupes (2-doors)</a></li>
+					<li><a href="FAQ.html">About Us & FAQ</a></li>
+				</ul>
+			</nav>
+	</div>
+</header>
+<div class="walk">
+<form style="padding:25%;">
+	<h2 style="color:black;"><i>Contact Us</i></h2>
+        <p input type="hidden" name="contact_number"><p>
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+		<label>Phone</label>
+		<input type="text" name="phone_number">
+		<br>
+		<br>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+		<br>
+        <input type="submit" value="Send">
+    </form>
+</div>
+<iframe width='100%' height='100%' id='mapcanvas' src='https://maps.google.com/maps?q=capstone%20ltd1%20Cherington%20Way,%20Ascot%20SL5%208TJ,%20United%20Kingdom&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class="zxos8_gm"><a href="https://downloadyou.tube">https://downloadyou.tube</a></div><div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'></div></div><div><small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div></iframe>
+
+<div style="column-count: 3;">
+	
+</div>
+
+</body>
+</html>
