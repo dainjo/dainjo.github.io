@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+header {z-index: 10;}
+div.s1 {position: absolute; top: 0px; background-color:white; Margin-top:0%; Width:100%;}
+body {background-color:rgba(0, 178, 255, 1); background-attachment: fixed;
+background-size:100% 100%;}
+.walk { text-align:center; width:100%;
+        height:; background-color: transparent; color: rgba(0, 178, 255, 1); padding:0% 0% 0% 0%;}
+        
+.walk1 {margin-top:11%; margin-left:auto; Margin-right:Auto; text-align:center; width:53%;
+     background-color: white; color: rgba(0, 178, 255, 1);padding:3% 0% 2% 0%; border-radius: 1%; box-shadow: 8px 12px 10px 12px rgba(0,0,0,0.5);}
+
+.clearfix ::after {content:""; display:table; clear:both;}
+
+nav li {display:inline-block; margin-left:30px; margin-right:85px; padding-top:25px;
+        position:relative;}
+nav a::before {content:""; display:block; height:5px; width:100%; background-color: rgba(0, 178, 255, 1); position:absolute; top: 0;}
